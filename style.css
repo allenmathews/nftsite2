@@ -4,13 +4,16 @@ body {
     margin: 0;
 }
 
+
+/* ----- TYPOGRAPHY ----- */
+
 h1,
 h3 {
     margin: 0;
 }
 
 h1 {
-    color: rgb(136, 50, 50);
+    color: whitesmoke;
     font-size: 2.25rem;
 }
 
@@ -25,13 +28,12 @@ h3 {
 }
 
 p {
-    line-height: 23px;
+    line-height: 1.5;
 }
 
 .subheading {
     display: block;
     font-size: 1.25rem;
-    /* 20 / 16 = 1.25 */
     color: #d0aaff;
 }
 
@@ -117,15 +119,25 @@ header,
 
 .section-two-image-container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
 .feature-image {
-    width: 48.8%;
     border-radius: 4.6px;
+    margin-bottom: 1em;
 }
 
 footer {
     text-align: center;
     color: #5f29a3;
+}
+
+@media (min-width: 480px) {
+    .section-two-image-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .feature-image {
+        width: 48.8%;
+    }
 }
