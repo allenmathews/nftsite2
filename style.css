@@ -129,7 +129,7 @@ header,
 
 footer {
     text-align: center;
-    color: #5f29a3;
+    color: #d9c9ec;
 }
 
 @media (min-width: 480px) {
@@ -137,6 +137,7 @@ footer {
         flex-direction: row;
         justify-content: space-between;
     }
+
     .feature-image {
         width: 48.8%;
     }
