@@ -131,21 +131,29 @@ footer {
 
 /* ----- NAVIGATION ----- */
 
+
+/*
+  Challenge: Write initial nav styles
+    1. Center-align the header content
+    2. Apply a top margin to the nav element to create space
+       between the nav and subheading
+    3. Make sure that the center alignment, the nav’s top margin,
+       and dotted borders between links display only on viewport widths
+       narrower than 768px
+*/
+
 nav a {
     color: #fff;
     text-decoration: none;
     font-size: 1.125rem;
     padding: 0.85em 0;
+    display: block;
 }
 
 ul {
     padding: 0;
     margin: 0;
     list-style-type: none;
-}
-
-li:not(:last-child) {
-    border-bottom: 1px dotted #a190b6;
 }
 
 
@@ -159,6 +167,20 @@ li:not(:last-child) {
 
     .feature-image {
         width: 48.8%;
+    }
+}
+
+@media (max-width: 767px) {
+    header {
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 1.5em;
+    }
+
+    li:not(:last-child) {
+        border-bottom: 1px dotted #a190b6;
     }
 }
 
