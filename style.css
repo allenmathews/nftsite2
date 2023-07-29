@@ -117,10 +117,19 @@ header,
     margin: 0 auto 2em;
 }
 
+.section-two-image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
 .feature-image {
     width: 100%;
     border-radius: 4.6px;
-    margin-bottom: 1em;
+}
+
+.feature-item {
+    flex: 1 260px;
 }
 
 footer {
@@ -130,17 +139,6 @@ footer {
 
 
 /* ----- NAVIGATION ----- */
-
-
-/*
-  Challenge: Write initial nav styles
-    1. Center-align the header content
-    2. Apply a top margin to the nav element to create space
-       between the nav and subheading
-    3. Make sure that the center alignment, the nav’s top margin,
-       and dotted borders between links display only on viewport widths
-       narrower than 768px
-*/
 
 nav a {
     color: #fff;
@@ -158,17 +156,6 @@ ul {
 
 
 /* ----- MEDIA QUERIES ----- */
-
-@media (min-width: 480px) {
-    .section-two-image-container {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .feature-image {
-        width: 48.8%;
-    }
-}
 
 @media (max-width: 767px) {
     header {
@@ -190,6 +177,20 @@ ul {
     section,
     footer {
         padding: 2.875em 0;
+    }
+
+    header .container,
+    nav ul {
+        display: flex;
+    }
+
+    header .container {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav li {
+        margin-left: 1.25em;
     }
 
     .btn {
